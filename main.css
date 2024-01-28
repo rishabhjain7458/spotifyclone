@@ -1,0 +1,379 @@
+
+body{
+    background-color: black;
+    color: white;
+}
+.mainbox{
+    display: flex;
+    gap: 8px;
+}
+.leftbox{
+    display: grid;
+    width: 425px;
+    height: 86.6vh;
+    grid-template-rows: .7fr 2fr;
+    gap: 8px;
+}
+.leftupper{
+    background-color: #212121;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.leftlower{
+    background-color: #212121;
+    border-radius: 10px;
+}
+.rightbox{
+    width: 100%;
+    background-color: #212121;
+    border-radius: 10px;
+    display: grid;
+    flex-wrap: wrap;
+}
+.rightbox {
+    height: 86.6vh;
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-align: justify;
+
+    background: hsla(0, 0%, 6%, 1);
+
+    background: linear-gradient(180deg, hsla(0, 0%, 6%, 1) 0%, hsla(0, 0%, 7%, 1) 34%);
+    
+    background: -moz-linear-gradient(180deg, hsla(0, 0%, 6%, 1) 0%, hsla(0, 0%, 7%, 1) 34%);
+    
+    background: -webkit-linear-gradient(180deg, hsla(0, 0%, 6%, 1) 0%, hsla(0, 0%, 7%, 1) 34%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#101010", endColorstr="#121212", GradientType=1 );
+}
+.rightbox::-webkit-scrollbar {
+    width: 10px; background: rgb(114, 114, 105);
+}
+.rightbox:hover{
+    overflow-y: scroll;
+}
+.leftupper .logo{
+    padding-top: 10px;
+    padding-left: 20px;
+    display: flex;
+}
+.leftupper .logo h3{
+    margin-top: 4px;
+    font-size: 20px;
+}
+.leftupper .homelogo{
+    padding-left: 20px;
+    display: flex;
+}
+.leftupper .homelogo h3{
+    margin-top: 5px;
+    font-size: 15px;
+    color: #bebebe;
+}
+.leftupper .homelogo h3:hover{
+    color: white;
+}
+.leftupper .searchlogo{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 7px;
+    display: flex;
+}
+.leftupper .searchlogo h3{
+    margin-top: 5px;
+    font-size: 15px;
+    color: #bebebe;
+}
+.leftupper .searchlogo h3:hover{
+    color: white;
+}
+.leftlower .liblogo{
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    display: flex;
+}
+.leftlower .liblogo h3{
+    margin-top: 5px;
+    font-size: 15px;
+    color: #bebebe;
+}
+.leftlower .liblogo h3:hover{
+    color: white;
+}
+.leftlower .add{
+    padding-left: 120px;
+    padding-top: 5px;
+}
+.leftlower .scrollable{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 160px;
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-align: justify;
+
+}
+.scrollable::-webkit-scrollbar {
+    width: 10px; background: rgb(114, 114, 105);
+}
+.scrollable:hover{
+    overflow-y: scroll;
+}
+.leftlower [class^="card"]{
+    background-color: #333232;
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+}
+.card1 h7{
+    padding-left: 20px;
+    font-size: 14px;
+}
+.card1 p{
+    padding-left: 20px;
+    font-size: 11px;
+}
+.card1 button{
+    margin-left: 20px;
+    font-size: 11px;
+    width: 105px;
+    height: 35px;
+    border-radius: 30px;
+    border: none;
+    transform: scale(0.98);
+}
+.card1 button:hover{
+    transform: scale(1);
+}
+.card2 h7{
+    padding-left: 20px;
+    font-size: 14px;
+}
+.card2 p{
+    padding-left: 20px;
+    font-size: 11px;
+}
+.card2 button{
+    margin-left: 20px;
+    font-size: 11px;
+    width: 140px;
+    height: 35px;
+    border-radius: 30px;
+    border: none;
+    transform: scale(0.98);
+}
+.card2 button:hover{
+    transform: scale(1);
+}
+.notice p{
+    padding-left: 20px;
+    font-size: 10px;
+}
+.notice button{
+    margin-left: 20px;
+    font-size: 11px;
+    width: 80px;
+    height: 35px;
+    border-radius: 30px;
+    border: solid white;
+    border-width: 1px;
+    background-color: #212121;
+    color: white;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color:rgba(0, 0, 0, .5);
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    position: sticky;
+    top: 0;
+    z-index:1;
+}
+nav .arrows{
+    padding-top: 10px;
+    padding-left: 30px;
+    font-size: 25px;
+}
+nav .signup{
+    margin-left: 74%;
+    padding-top: 5px;
+    gap: 10px;
+    display: flex;
+}
+nav .signup #signup{
+    width: 120px;
+    height: 50px;
+    border-radius: 30px;
+    color: rgb(92, 88, 88);
+    background-color: black;
+    border: none;
+    font-size: 14px;
+}
+nav .signup #login{
+    width: 180px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    font-size: 14px;
+    background-color: white;
+}
+nav .signup #login:hover{
+    width: 200px;
+    height: 52px;
+    background-color: #f6f6f6;
+}
+nav .signup #signup:hover{
+   color: whitesmoke;
+}
+.rightbox h3{
+    padding-left: 20px;
+}
+.rightbox [class^="cardcont"]{
+    width: 100%;
+    height: fit-content;
+}
+.card{
+    width: 170px;
+    height: 250px;
+    background: hsla(0, 0%, 9%, 1);
+
+background: linear-gradient(90deg, hsla(0, 0%, 9%, 1) 0%, hsla(0, 0%, 12%, 1) 75%);
+
+background: -moz-linear-gradient(90deg, hsla(0, 0%, 9%, 1) 0%, hsla(0, 0%, 12%, 1) 75%);
+
+background: -webkit-linear-gradient(90deg, hsla(0, 0%, 9%, 1) 0%, hsla(0, 0%, 12%, 1) 75%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#181818", endColorstr="#1E1E1E", GradientType=1 );
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    border-radius: 10px;
+    transform: scale(0.98);
+}
+.card .cardimg{
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;  
+}
+.card img{
+    border-radius: 5px;
+}
+.card .cardtext{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    gap: 7px;
+}
+.card .cardtext p1{
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+}
+.card .cardtext p2{
+    font-size: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 0px;
+}
+.rightbox [class^="cardcont"]{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.playicon{
+position: absolute;
+top: 40%;
+margin-left: 59.5%;
+opacity: 0;
+transition: all 0.4s;
+}
+
+.card:hover .playicon{
+    opacity: 1;
+    transform: translateY(0);
+}
+.circle{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgb(50, 233, 50);
+    display: grid;
+    place-items: center;
+    transform: scale(0.95);
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 18px solid black;
+    transform: rotate(90deg);
+    margin-left: 0.2rem;
+}
+.playicon:hover .circle{
+    transform: scale(1);
+}
+.card:hover{
+    transform: scale(1);
+    background:rgb(37, 37, 37)
+}
+.end{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 80px;
+}
+.end [class^="company"] ul li{
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+.promotion{
+    margin-left: 250px;
+    display: flex;
+    gap: 20px;
+}
+.circle2{
+    width: 35px;
+    height: 35px;
+    background-color: #313131;
+    border-radius: 50%;
+}
+.circle2 img{
+    margin-left: 7px;
+    margin-top: 7px;
+}
+.banner{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: deeppink;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    background: linear-gradient(90deg,#af2896,#855abf,#509BF5);
+}
+.bannertext{
+    margin-left: 15px;
+    padding-top: 5px;
+}
+.banner #bannerbtn{
+    margin-left: 760px;
+}
+.banner #bannerbtn button{
+    font-size: 11px;
+    width: 120px;
+    height: 50px;
+    margin-top: 5px;
+    border-radius: 30px;
+    border: none;
+    transform: scale(0.98);
+}
+.banner #bannerbtn button:hover{
+    transform: scale(1);
+}
